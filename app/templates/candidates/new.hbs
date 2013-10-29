@@ -1,0 +1,8 @@
+  {{input value=name placeholder="Candidate Name"}}
+  {{input value=email placeholder="Candidate Email"}}
+  {{#unless validEmail}}
+    <span class="warning">Enter Valid Email</span>
+  {{/unless}}
+
+  <button {{action "save"}}>Submit</button>
+  <button {{action "close"}}>Close</button>
