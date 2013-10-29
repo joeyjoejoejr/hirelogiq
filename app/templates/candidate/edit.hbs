@@ -1,6 +1,8 @@
-{{input value=name placeholder="Candidate Name"}}
+{{#hl-form escape="close"}}
+  {{input value=name placeholder="Candidate Name"}}
 
-<button {{action 'save'}}>Update</button>
-<button {{action 'delete'}}>Delete User</button>
+  <button {{action 'save'}}>Update</button>
+  <button {{action 'delete'}}>Delete User</button>
+{{/hl-form}}
 
 {{outlet}}

@@ -1,3 +1,4 @@
+{{#hl-form escape="close"}}
   {{input value=name placeholder="Candidate Name"}}
   {{input value=email placeholder="Candidate Email"}}
   {{#unless validEmail}}
@@ -5,4 +6,4 @@
   {{/unless}}
 
   <button {{action "save"}}>Submit</button>
-  <button {{action "close"}}>Close</button>
+{{/hl-form}}

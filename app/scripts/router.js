@@ -1,3 +1,0 @@
-Hirelogiq.Router.map(function () {
-  
-});

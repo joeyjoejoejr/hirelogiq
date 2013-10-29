@@ -9,3 +9,7 @@ Hirelogiq.CandidateEditController = Ember.ObjectController.extend
       candidate.deleteRecord()
       candidate.save()
       @transitionToRoute 'candidates'
+
+    close: ->
+      @get("model").rollback()
+      @transitionToRoute 'candidate', @get('model')
