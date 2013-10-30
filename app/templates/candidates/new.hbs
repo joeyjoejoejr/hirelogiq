@@ -1,9 +1,10 @@
-{{#hl-form escape="close"}}
+{{#hl-form foo=bar escape="close"}}
   {{input value=name placeholder="Candidate Name"}}
   {{input value=email placeholder="Candidate Email"}}
   {{#unless validEmail}}
     <span class="warning">Enter Valid Email</span>
   {{/unless}}
+  {{github-search githubUserName=githubUserName avatarUrl=avatarUrl}}
 
   <button {{action "save"}}>Submit</button>
 {{/hl-form}}

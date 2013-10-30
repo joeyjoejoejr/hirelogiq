@@ -2,7 +2,11 @@
 
 <ul>
  {{#each}}
+ <img class="avatar" {{bind-attr src='avatarUrl'}}>
  <li>{{#link-to 'candidate' this}}{{name}}{{/link-to}}</li>
+ {{#if githubUserName}}
+   <li><a target="_blank" {{bind-attr href="githubLink"}}>Github</a></li>
+ {{/if}}
   {{/each}}
 </ul>
 

@@ -1,0 +1,10 @@
+{{input value=githubUserName class="candidate-github" placeholder="GitHub Username"}}
+{{#if showResults}}
+  <ul>
+    {{#each result in results}}
+      <li class="github-user" {{action 'updateGitHubName' result}}>
+        <img class="candidate-avatar" {{bindAttr src="result.avatar_url"}}>{{result.login}}
+      </li>
+    {{/each}}
+  </ul>
+{{/if}}
