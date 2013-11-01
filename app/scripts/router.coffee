@@ -4,3 +4,5 @@ Hirelogiq.Router.map ->
 
   @resource 'candidate', path: '/candidate/:candidate_id', ->
     @route 'edit'
+    @resource 'comments', ->
+      @route 'new'

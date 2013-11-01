@@ -14,6 +14,15 @@
   </tr>
 </table>
 
+<ul>
+  {{#each comments}}
+    <p>{{body}}</p>
+  {{else}}
+    <li>No comments</li>
+  {{/each}}
+</ul>
+{{#linkTo 'comments.new'}}Comment{{/linkTo}}
+
 {{#linkTo 'candidate.edit'}}Change{{/linkTo}}
 
 {{outlet}}

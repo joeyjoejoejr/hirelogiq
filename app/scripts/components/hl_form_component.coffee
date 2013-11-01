@@ -5,4 +5,4 @@ Hirelogiq.HlFormComponent = Ember.Component.extend
     @sendAction('escape') if e.keyCode == 27
 
   didInsertElement: ->
-    @.$().find('input:first-child').focus()
+    @.$().find('textarea:first-child, input:first-child').focus()
