@@ -1,0 +1,7 @@
+<h1>Login</h1>
+<form {{action 'login' on='submit'}}>
+  <p class='error'>{{loginErrors}}</p>
+  {{input value=email placeholder="Email"}}
+  {{input type="password" value=password placeholder="Password"}}
+  {{input type="submit" value="Login"}}
+</form>

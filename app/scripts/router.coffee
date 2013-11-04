@@ -1,4 +1,6 @@
 Hirelogiq.Router.map ->
+  @resource 'login'
+
   @resource 'candidates', ->
     @route 'new'
 
