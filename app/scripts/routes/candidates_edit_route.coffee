@@ -1,4 +1,4 @@
-Hirelogiq.CandidateEditRoute = Ember.Route.extend
+Hirelogiq.CandidatesEditRoute = Hirelogiq.AuthenticatedRoute.extend
   model: (params) ->
     @modelFor 'candidate'
 

@@ -16,7 +16,10 @@ Hirelogiq.LoginController = Ember.ObjectController.extend
       if @get("email") == "admin@hirelogiq.com" and @get("password") == "foobar"
         localStorage.token = "1234567890"
         @set "token", localStorage.token
-        @transitionToRoute "candidates"
+        if @get("transition")
+          @get("transition").retry()
+        else
+          @transitionToRoute "candidates"
       else
         @set "loginErrors", "Invalid Username or Password"
         @set "password", ""

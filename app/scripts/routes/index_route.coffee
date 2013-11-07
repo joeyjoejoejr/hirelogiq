@@ -1,3 +1,3 @@
-Hirelogiq.IndexRoute = Ember.Route.extend
+Hirelogiq.IndexRoute = Hirelogiq.AuthenticatedRoute.extend
   redirect: ->
     @transitionTo("candidates")

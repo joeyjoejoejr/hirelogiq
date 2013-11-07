@@ -1,4 +1,7 @@
 Hirelogiq.LoginRoute = Ember.Route.extend
-  setupController: (controller, context) ->
-    controller.set 'content', {}
+  model: ->
+    {}
+
+  setupController: (controller, model) ->
+    controller.set 'model', model
     controller.reset()

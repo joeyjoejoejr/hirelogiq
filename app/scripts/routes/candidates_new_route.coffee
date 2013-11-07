@@ -1,3 +1,3 @@
-Hirelogiq.CandidatesNewRoute = Ember.Route.extend
+Hirelogiq.CandidatesNewRoute = Hirelogiq.AuthenticatedRoute.extend
   model: ->
     @store.createRecord 'candidate', {}
